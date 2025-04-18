@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏥 Operation Scheduler For Hospital Management
 
-## Getting Started
+A modern web-based solution to efficiently manage and monitor Operation Theater (OT) schedules in a hospital environment. This project addresses the challenges of dynamic surgical scheduling, resource tracking, and operational transparency using a robust tech stack.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Hospital OT scheduling can be highly dynamic due to:
+- Emergency surgeries
+- Delays/postponements
+- OT room/doctor availability
+- Resource and staff allocation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This system allows:
+- Real-time OT scheduling and rescheduling
+- Admin dashboard for monitoring OT usage and staff efficiency
+- Authentication-based access for admins and users
+- Pre/post-op report tracking and analytics
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚙️ Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+| Tech         | Description                         |
+|--------------|-------------------------------------|
+| Next.js      | React framework for frontend & SSR  |
+| Tailwind CSS | Utility-first responsive UI design  |
+| Firebase     | Backend-as-a-Service: Auth, Firestore, Hosting |
+| Recharts     | Charts and data visualization       |
+| JWT/OAuth    | Secure authentication mechanism     |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Folder Structure
 
-## Deploy on Vercel
+├── components/ │ ├── Navbar.jsx │ ├── Footer.jsx │ ├── Sidebar.jsx │ ├── ScheduleCard.jsx │ ├── SurgeryForm.jsx │ ├── UserCard.jsx ├── dashboard/ │ ├── layout.jsx │ ├── page.jsx │ ├── analytics/ │ ├── doctors/ │ ├── ot_schedule/ │ ├── patients/ │ ├── reports/ ├── hooks/ │ └── useAuth.js ├── lib/ │ ├── auth.js │ ├── logger.js │ ├── helpers.js ├── types/ │ ├── index.js │ └── surgery.js ├── public/ │ └── logo.png
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🧪 Features
+
+- 🔐 Secure login/logout system with Firebase Auth (JWT & OAuth)
+- 🏥 Create, update, cancel surgeries dynamically
+- 📊 Admin dashboard with real-time analytics
+- 🧾 Attach surgical reports (charts, PDFs, remarks)
+- 👩‍⚕️ Manage doctors, nurses, patients
+- 📝 Logging system for every user/admin action
+- 📆 View past & upcoming OT schedules
+- 💊 Track drugs, instruments, and special material usage
+
+
