@@ -42,18 +42,6 @@ How to run ?
    cd operation-scheduler
    npm run dev 
 
-.env.local file :
-
-NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyAG8v2OywpQLOL9NMMiEiJFYJ6TnnD8xZg
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=operationscheduler-3831e.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=operationscheduler-3831e
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=operationscheduler-3831e.appspot.com
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=1059931978624
-NEXT_PUBLIC_FIREBASE_APP_ID=1:1059931978624:web:1269d997b943f09e2adf65
-NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=G-NZ78CE8BLB
-GMAIL_USER=rohitdasari1843@gmail.com
-GMAIL_PASS=rmvr vszn dilb jyqk
-
 ---
 
 ## 🧪 Features
